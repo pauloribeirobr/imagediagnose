@@ -241,7 +241,7 @@ public class PopulaDados {
         sql = "INSERT INTO ANAMNESES_IMAGENS (IDANAMNESE, DESCRICAO, IMAGEM) VALUES (?, ?, ?)";
         stmt = connection.prepareStatement(sql);
         stmt.setInt(1, 1);
-        stmt.setString(2, "Imagem de Teste");
+        stmt.setString(2, "imagem01.png");
         stmt.setBytes(3, arquivoBytes);
 
         try {
